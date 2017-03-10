@@ -1,5 +1,5 @@
 var mongoose = require('mongoose');
-//Users database scheme
+//Movies database scheme
 module.exports = mongoose.model('Movie', {
 	name: String,
 	director: String,
