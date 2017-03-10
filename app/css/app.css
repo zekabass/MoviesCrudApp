@@ -1,0 +1,636 @@
+/* app css stylesheet */
+@import url(https://fonts.googleapis.com/css?family=Jura);
+body {
+	
+	font-family: 'Jura', sans-serif;
+}
+
+html, body { height: 100%; width: 100%; margin: 0;background:#fff; }
+
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak
+{
+    display: none;
+}
+
+#splash-page.ng-cloak  /*<-- This has higher specificity so it can display a splash screen*/
+{
+    display: block;
+}
+
+
+h1 {
+	color:#777;
+	font-size:40px;
+}
+
+img {
+	
+}
+
+td, th {
+    height: 45px;
+    padding: 0;
+	
+}
+
+a:focus {
+  outline:none;
+}
+
+.btn.active.focus, .btn.active:focus, .btn.focus, .btn.focus:active, .btn:active:focus, .btn:focus {
+    outline: none;
+  
+}
+.main {
+	height: 100%; 
+}
+
+
+
+
+
+
+.list-item {
+	width:70%;
+	margin: 0 auto;
+}
+
+.list-item a .btn {
+	border:none;
+	color:#8AC45E;
+	margin:15px 0px;
+	text-transform: uppercase;
+	text-decoration: none;
+	height:55px;
+	font-family: 'Jura', sans-serif;
+	font-size:25px;
+	webkit-transition: width 0.3s, margin 0.3s, background 0.4s, font-size 0.2s, color 0.4s;
+    -moz-transition: width 0.3s, margin 0.3s, background 0.4s, font-size 0.2s, color 0.4s;
+    -ms-transition: width 0.3s,  margin 0.3s, background 0.4s, font-size 0.2s, color 0.4s;
+    transition: width 0.3s,  margin 0.3s, background 0.4s, font-size 0.2s, color 0.4s;
+	transition-timing-function: ease-in-out;
+	webkit-transition-timing-function: ease-in-out;
+	-moz-transition-timing-function: ease-in-out;
+	-ms-transition-timing-function: ease-in-out;
+	border:2px solid #337ab7;
+	text-align:left;
+}
+
+.list-item a.btn::after {
+	margin-bottom:0px;
+}
+
+.list-item .btn:hover {
+	background:#8AC45E;
+	width:115%;
+	margin-left:-7.25%;
+	border:2px solid #337ab7;
+	color:#337ab7;
+	
+}
+
+a:hover, a:visited, a:link, a:active {
+	text-decoration: none;
+}
+
+.p-right {
+	color:#C7D1D8;
+	text-decoration: none;
+	font-size:16px;
+	float:right;
+	text-align:left;
+	line-height:20px;
+}
+
+.p-right small {
+	color:#C7D1D8;
+	padding-right:15px;
+	font-size:15px;
+	text-align:left;
+	line-height:20px;
+}
+
+.btn:hover span small{
+	color:#337ab7; !important
+}
+
+.btn:hover span{
+	color:#337ab7; !important
+}
+
+.btn:focus {
+	outline: none;
+	border-color#449D44;
+}
+
+.p-left {
+	
+	float:left;
+	line-height:20px;
+}
+
+span {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;      
+}
+
+
+ input {
+    color: #000;
+   
+}
+
+.project-page h1 {
+	color:#3E4C56;
+}
+
+.build-options {
+    background: #e6ecf2 none repeat scroll 0 0;
+    border-radius: 10px;
+    font-family: Helvetica;
+    font-size: 12px;
+    font-weight: normal;
+    text-align: center;
+}
+.build-options form .form-group {
+    text-align:left;
+    width:100%;
+    margin:10px;
+	padding-left: 20px;
+    padding-top: 20px;
+}
+
+
+.build-options label {
+    margin:5px;
+    padding: 3px 0;
+}
+
+.build-options hr {
+   
+    
+}
+.build-stats h4 {
+	margin-top: 65px;
+ }
+
+.buildingPage h3 {
+	margin-bottom:27px;
+}
+
+#submit {
+    color:#3E4C56;
+   margin:20px;
+}
+
+.ngdialog-content .alert-message {
+    text-align:center;
+}
+
+.alert-box .btn {
+    width:40%;
+    text-decoration: none;
+    border:none;
+    outline: none;
+}
+
+.table-section {
+  margin-top:30px;
+  text-align:left;
+}
+
+table {
+	
+}
+.table > thead > tr > th {
+    border-bottom:none;
+	background:#f1f3f6;
+	vertical-align: middle;
+}
+
+.table > tbody > tr > td, .table > tbody > tr > th, .table > tfoot > tr > td, .table > tfoot > tr > th, .table > thead > tr > td, .table > thead > tr > th {
+   /* border-top: 1px solid #B2B2B2; */
+}
+
+.back-button {
+    color: #fff;
+    font-size: 19px;
+    margin-top: 5px;
+    margin-right:20px;
+    float:right;
+}
+
+.back-button a:hover, a:visited, a:link, a:active {
+	color:#777;
+	border:none;
+}
+
+.ngdialog.ngdialog-theme-default .ngdialog-content {
+    width:30%;
+}
+
+.ngdialog {
+    
+}
+
+
+.login {
+    margin:0 auto;
+    width:35%;
+}
+.log-button {
+  
+    font-size: 19px;
+    margin-top: 5px;
+    margin-left:20px;
+    float:left;
+}
+
+.log-button a {
+    color:#EC971F;
+}
+.bg form .btn {
+    width:150px;
+    margin:0 auto;
+}
+
+#inputPassword {
+    margin-top:5px;
+}
+
+.navigate {
+    height:40px;
+}
+
+.active-user {
+    float:left;
+    margin-left:10px;
+}
+
+.active-user p{
+    color:#84BF64;
+}
+
+.log-out {
+    color:#EC971F;
+}
+
+.glyphicon {
+    font-size:13px;
+    padding-right: 10px;
+}
+
+
+button:hover {
+   color:#fff;
+   border:solid 1px;
+}
+
+button:hover i{
+   color:#fff;
+   
+}
+
+
+.gly-finished {
+	color:#449D44;
+	padding-right:6px;
+}
+
+
+
+.nav li button {
+    width:210px;
+    
+}
+.main-nav {
+    margin:0 auto;
+    float:none;
+    width:70%;
+}
+
+.nav-hold {
+   min-height: 10px;
+  
+   background:#C7D1D8;
+   border:none;
+   border-radius:10px 0px 0px 0px;
+}
+
+.nav-hold button:hover{
+  color:#F0F0F0;
+   background:#76B373;
+   
+}
+
+.nav-hold button {
+   background:#E3E9ED;
+}
+
+.nav-hold .glyphicon-menu-down{
+    margin-right:5px;
+}
+
+.toggle-down {
+    border:none;
+    width:100%;
+    background:#76B373;
+    border-radius:10px 0px 0px 0px;
+}
+
+.nav-hold .btn.toggle-down {
+    font-size:10px;
+}
+
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:focus, .navbar-default .navbar-nav > .open > a:hover {
+    background:#C7D1D8;
+}
+
+.toggle-down:hover, .toggle-down:visited, .toggle-down:link, .toggle-down:active, .toggle-down:focus {
+	background:#76B373;
+    color:#BD8C2B
+}
+.btn-default:active:hover,
+.btn-default.active:hover,
+.open > .dropdown-toggle.btn-default:hover,
+.btn-default:active:focus,
+.btn-default.active:focus,
+.open > .dropdown-toggle.btn-default:focus,
+.btn-default:active.focus,
+.btn-default.active.focus,
+.open > .dropdown-toggle.btn-default.focus {
+   
+  /* background:#76B373;
+   border:2px;
+   box-shadow:none; */
+}
+
+.btn-default:active,
+.btn-default.active,
+.open > .dropdown-toggle.btn-default {
+ /* background:#8AC45E;
+  border:none;
+  box-shadow:none;*/
+  
+}
+
+.nav-hold button {
+    height:35px;
+}
+
+.nav-hold button.btn:active:focus{
+    background:#76B373;
+    height:100%;
+    border:none;
+    margin:0;
+    box-shadow:none;
+    outline:none !important;
+    outline-offset:0px;
+    height:35px;
+}
+
+.nav-hold button.btn:focus{
+    margin:0;
+    border:none;
+    box-shadow:none;
+    outline:none !important;
+    outline-offset:0px;
+    
+}
+
+.build-history tr{
+    background-color:#C7D1D8;
+}
+
+.build-history thead tr{
+    background-color:#C7D1D8;
+}
+
+
+.build-history th {
+    text-align:center;
+    color:#3E4C56;
+    border-color:#3E4C56;
+    background:#76B373;
+}
+
+.build-history td {
+    width:20%;
+    font-size:16px;
+    color:#3E4C56;
+    text-align:center;
+}
+
+.table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
+  background-color: #CEEAB9;
+}
+
+.dropdown-menu { 
+    background:#E3E9ED;
+    margin-left:15px;
+}
+
+
+.build_status li {
+    background-color: #e6ecf2;
+    border-color: #c7d1d8;
+    color: #000;
+    height: 30px;
+    padding: 4px 15px;
+}
+
+.build_status li p {
+   float:left;
+   position:absolute;
+}
+.build_status li span {
+	color: #449d44;
+    float: right;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 3px;
+    text-align: left;
+}
+
+.right-radio {
+    float: right;
+    text-align: left;
+    width: 70%;
+}
+
+
+.confirm {
+	margin-top:10px;
+	margin-bottom:5px;
+}
+
+.task-buttons {
+	width:100px;
+	
+}
+a.btn {
+	background: #F1F3F6;
+}
+
+a.btn:hover {
+	background: #F1F3F6;
+}
+a.btn:active:hover {
+	background: #F1F3F6;
+}
+a.btn:focus {
+	background: #F1F3F6;
+}
+
+tr .btn {
+	min-width: 125px;
+}
+
+.selecting-btns  {
+	margin: 5%;
+    vertical-align: middle;
+}
+
+.selecting-btns .btn {
+	width: 80%;
+	background:#449D44;
+	font-size:20px;
+	box-shadow:none;
+	border:none;
+}
+
+.selecting-btns .btn.blue {
+	background:#5BC0DE;
+}
+
+.selecting-btns .btn.blue:hover {
+	background:#5BC0DE;
+}
+
+.selecting-btns .btn.blue:active:focus {
+	background:#5BC0DE;
+}
+
+.selecting-btns .btn:hover {
+	background:#449D44;
+}
+
+.selecting-btns .btn:active {
+	background:#449D44;
+}
+.selecting-btns .btn:active:hover {
+	background:#449D44;
+}
+.selecting-btns .btn:focus {
+	background:#449D44;
+}
+
+.selecting-btns .btn  .glyphicon {
+	font-size:30px;
+	
+}
+
+.sidebar-nav h2 {
+	color:#fff;
+}
+
+
+.sidebar-nav  h3{
+	color: #D7E26F;
+}
+
+
+.down  .btn{
+	color: #D7E274;
+}
+
+.down  .btn:hover{
+	color: #D7E274;
+}
+
+
+.side-proj {
+	color:#FFE28C !important
+	
+}
+
+.iconProj {
+	float:right;
+	padding-right: 70px;
+    padding-top: 12px;
+	width:40px;
+}
+
+.iconProj2 {
+	float:right;
+	width:40px;
+    padding-top: 12px;
+}
+
+.side-proj i {
+	font-size:25px;
+	padding:0;
+	float:left;
+}
+
+.sidebar-nav li h4 i {
+		
+	padding:0;
+	float:left;
+}
+
+.sidebar-nav li h4 {
+	color:#FFE28C !important;
+	font-size:15px;
+}
+
+.sidebar-nav li h4 span {
+	color:#fff !important;
+	font-size:14px;
+	
+}
+
+.projectsTable {
+	width:80%;
+	margin:20px;
+	color:#333333;
+	border:none;
+}
+
+.project-stats h4 {
+	text-align: center;
+	margin-top:50px;
+}
+
+
+
+hr.style14 { 
+  border: 0; 
+  height: 3px; 
+  color:#fff !important;
+  width:60%;
+ 
+}
+
+
+
+
+.ng-cloak { display: none !important; }
+
+.input-lg {
+	height:36px;
+	font-size:13px;
+}
+
+#select {
+	height:32px;
+}
+
+.edit-page h4{
+	margin-top:0px;
+	margin-bottom:5px;
+}
+
+
+

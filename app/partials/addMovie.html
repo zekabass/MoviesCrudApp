@@ -1,0 +1,49 @@
+	
+    <div  class="container"></br></br></br>
+    
+	<a ng-href="#/"><button class="btn btn-primary btn-block" type="submit" >Back to the list</button></a><br><br>
+		<h2>Add new movie</h2>
+		<p>Here you can add a movie to your private list, you can add director,year of release and your mark.</p>
+		<form >
+		  <div class="form-group">
+			<input type="task" ng-model="movieData.name" class="form-control input-lg" name="movieName" id="movieName" placeholder="New movie name">
+		  </div>
+		  <div class="form-group">
+			<input type="task" ng-model="movieData.director" class="form-control input-lg" name="directorName" id="directorName" placeholder="Movie director name">
+		  </div>
+		  <div class="form-group">
+			<input type="task" ng-model="movieData.year" class="form-control input-lg" name="year" id="year" placeholder="Year of release">
+		  </div>
+		  <div class="form-group">
+		<h5 >Select genre</h5>
+		<select class="form-control" name="select" id="select" ng-model="movieData.genre">
+			<option >Horror</option>
+			<option >Action</option>
+			<option >Comedy</option>	
+			<option >Romance</option>
+			<option >Drama</option>
+			<option >Thriller</option>
+			<option >Other</option>					
+		</select>
+		
+	    </div>
+		 <div class="form-group">
+			<h5>Movie mark</h5>
+			<select class="form-control" name="movieReview" id="select" ng-model="movieData.review">
+				<option >1 stars</option>
+				<option >2 stars</option>
+				<option >3 stars</option>	
+				<option >4 stars</option>
+				<option >5 stars</option>			
+			</select>
+		</div>
+	  
+     <button class="btn btn-lg btn-primary btn-block" type="submit" ng-click="saveMovie()">Add movie to database</button><br><br>
+	 
+	 
+	
+	 
+	 
+	 
+	
+

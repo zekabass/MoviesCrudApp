@@ -1,0 +1,37 @@
+
+   <div  class="container"></br></br></br>
+		<a ng-href="#/addMovie"><button class="btn btn-primary btn-block" type="submit" >Add new movies</button></a><br><br>
+		<h3 class="log-in-title">Movies List </h3>
+		<table class="table">
+		<thead class="thead-default text-center">
+		<tr >
+		  <th class="text-center">Movie name</th>
+		  <th class="text-center">Movie director</th>
+		  <th class="text-center">Year of release</th>
+		  <th class="text-center">Genre</th>
+		  <th class="text-center">Mark</th>
+		  <th class="text-center">Last edited by</th>
+		   <th class="text-center"></th>
+		</tr>
+		</thead>
+		<tbody>
+		
+		<tr ng-repeat="movie in fullMovieList">
+			<td class= "col-lg-2 text-center"><p class="tooltip-top" >{{movie.name}}</p></td>
+			<td class= "col-lg-2 text-center"><p class="tooltip-top" >{{movie.director}}</p></td>
+			<td class= "col-lg-2 text-center"><p class="tooltip-top" >{{movie.year}}</p></td>
+			<td class= "col-lg-2 text-center"><p class="tooltip-top" >{{movie.genre}}</p></td>
+			<td class= "col-lg-1 text-center"><p class="tooltip-top" >{{movie.review}}</p></td>
+			<td class= "col-lg-2 text-center"><p class="tooltip-top" >{{movie.user}}</p></td>
+			<td class= "col-lg-1 text-center"><p class="tooltip-top" ><a ng-click="service.selMovie = movie" ng-href="#/editMovie"><i class="glyphicon glyphicon-edit"></i></a>&nbsp <i ng-click="deleteMovie(movie.name)" class="glyphicon glyphicon-trash"></i></p></td>
+		</tr>
+		
+		</tbody>
+		</table>
+		
+	</div>
+	 
+	 
+	 
+	
+

@@ -1,0 +1,18 @@
+ <div  class="container">
+       
+      
+    <h1 class="log-in-title">New Task<br><small>Add new task to list</small></h1>
+	<p>Here you can add a new tasks that will be added to list on this specific project</p>
+    <form >
+      <div class="form-group">
+        <input type="task" ng-model="newTask.name" class="form-control input-lg" name="task" id="task" placeholder="New task name">
+      </div>
+      <div class="form-group">
+			<textarea type="taskDescription" ng-model="newTask.description" class="form-control input-lg" name="taskDescription" id="taskDescription" placeholder="New task description"></textarea>
+	</div>
+	 
+     <button class="btn btn-lg btn-primary btn-block" type="submit" ng-click="newTaskSubmit()">Add task</button>
+    
+    </form>
+	
+</div>
